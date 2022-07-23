@@ -1,0 +1,27 @@
+{
+  "name": "tictactoe",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "vite",
+    "build": "npm run clear && vite build",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.js",
+    "format:lint": "npm run format && npm run lint",
+    "clear": "rimraf dist .parcel-cache"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "babel-preset-nano-react-app": "^0.1.0",
+    "vite": "^2.6.7"
+  },
+  "babel": {
+    "presets": [
+      "nano-react-app"
+    ]
+  }
+}
